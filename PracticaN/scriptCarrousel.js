@@ -6,14 +6,30 @@ document.addEventListener("DOMContentLoaded",function(){
 var informacion = ["producto 1", "producto 2","producto 3"];
 function MostrarProductos(evento){
   evento.preventDefault();
-  for (let index = 0; index < informacion.length; index++) {
-    var node = document.createElement('li');
-    node.appendChild(document.createTextNode(informacion[index]));
-     
-    document.getElementById('ListaProductos').appendChild(node);
-    
+  var busqueda = document.getElementById("Buscar").value;
+  console.log(busqueda);
+  if(busqueda!=null){
+    for (let index = 0; index < informacion.length; index++) {
+      if(informacion[index]==busqueda){
+        var node = document.createElement('li');
+        node.appendChild(document.createTextNode(informacion[index]));
+        
+        document.getElementById('ListaProductos').appendChild(node);
+      }
+    }
+   
+  }else{
+    for (let index = 0; index < informacion.length; index++) {
+      var node = document.createElement('li');
+      node.appendChild(document.createTextNode(informacion[index]));
+      
+      document.getElementById('ListaProductos').appendChild(node);
+      
+    }
   }
-  return;
+  
+      return;
+
 /*
   if(usuario.length==0 || usuario.length<6){
 
