@@ -1,0 +1,210 @@
+a.openModal { 
+    margin: 1em auto; 
+    display: block; 
+    width: 200px; 
+    background: #ccc; 
+    text-align: center; 
+    text-decoration: none; 
+    color: black; 
+    padding: 10px; 
+    text-shadow: 0 1px 0 #fff; 
+    border: 1px solid rgba(0,0,0,0.1); 
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+body{
+
+background-color: bisque;
+
+}
+
+.titulo{
+
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    text-align: center;
+    display: inline-block;
+
+}
+
+.container-form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: black;
+    border-style:groove;
+ 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+
+}
+ul{
+
+list-style: none;
+
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+header {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  nav {
+    float: left;
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 20px;
+  }
+  nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #eca023;
+  }
+  .dropdown {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 20px;
+  }
+  #Botonxd{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 20px;
+    list-style: none;
+    overflow: hidden; 
+    display: block; 
+    padding: 20px;
+    text-decoration: none;
+  }
+  #Botonxd:hover {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+  .dropdown-content a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #eca023;
+  }
+  #miku{
+
+    zoom: 80%;
+
+  }
+  #len{
+
+    zoom: 90%;
+
+  }
+  #rin{
+
+   
+  }
+  
+  .Informacion{
+font-size: x-large;
+    padding: 100px;
+   
+
+
+  }
+
+#Elementos div{
+  display: inline;
+  margin-left: 10px;
+}
+
+.Midiv{
+  background-color: red; 
+  width: 180px;
+}
+#formulario{
+
+border-color: rgb(23, 24, 24);
+border: solid;
+padding: 10px;
+margin: 10px;
+width: 500px;
+
+}
